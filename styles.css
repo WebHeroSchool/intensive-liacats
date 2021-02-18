@@ -1,3 +1,6 @@
+* {
+    font-family: pt_serif, Arial, Helvetica, Sans-serif;
+}
 body {
     margin: 0px;
 }
@@ -10,8 +13,28 @@ body {
     justify-content: space-between;
 }
 .logo {
+    position: relative;
     padding: 40px 0;
-    font-family: PT Serif;
+    padding-left: 44px;
+    font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
+}
+.logo__circle {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    opacity: .7;
+}
+.logo__circle_color_dark-blue {
+    background: #0056EC;
+}
+.logo__circle_color_blue {
+    left: 8px;;
+    top: 56%;
+    background: #C8DBFB;
 }
 .menu {
     display: flex;
@@ -32,7 +55,6 @@ body {
     width: 36%;
 }
 .main-content__title {
-    font-family: PT Serif;
     font-size: 50px;
 }
 .main-content__paragraph, .main-content__request {
