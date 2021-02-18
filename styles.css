@@ -1,3 +1,53 @@
-.title {
+body {
+    margin: 0px;
+}
+.wrapper {
+    margin: auto;
+    width: 80%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    padding: 40px 0;
+    font-family: PT Serif;
+}
+.menu {
+    display: flex;
+    align-items: center;
     font-family: Roboto;
+}
+.menu__item {
+    padding: 0 13px;
+}
+.menu__item:last-child {
+    padding-right: 0;
+}
+.main-section {
+    display: flex;
+    justify-content: space-between;
+}
+.main-content {
+    width: 36%;
+}
+.main-content__title {
+    font-family: PT Serif;
+    font-size: 50px;
+}
+.main-content__paragraph, .main-content__request {
+    font-family: Roboto;
+}
+.main-content__paragraph {
+    font-size: 18px;
+    margin-bottom: 41px;
+}
+.main-content__request {
+    font-size: 14px;
+    width: 209px;
+    height: 44px;
+}
+.image-content {
+    padding-right: 514px;
+    border: dashed 1px red;
 }
