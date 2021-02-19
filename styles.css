@@ -1,5 +1,5 @@
 * {
-    font-family: pt_serif, Arial, Helvetica, Sans-serif;
+    font-family: Arial, Helvetica, Sans-serif;
 }
 body {
     margin: 0px;
@@ -16,7 +16,7 @@ body {
     position: relative;
     padding: 40px 0;
     padding-left: 44px;
-    font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
+    font: bold 24px/31px pt_serif;
 }
 .logo__circle {
     position: absolute;
@@ -39,10 +39,10 @@ body {
 .menu {
     display: flex;
     align-items: center;
-    font-family: Roboto;
 }
 .menu__item {
     padding: 0 13px;
+    font-family: Roboto;
 }
 .menu__item:last-child {
     padding-right: 0;
@@ -56,6 +56,7 @@ body {
 }
 .main-content__title {
     font-size: 50px;
+    font-family: pt_serif;
 }
 .main-content__paragraph, .main-content__request {
     font-family: Roboto;
