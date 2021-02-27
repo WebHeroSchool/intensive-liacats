@@ -6,17 +6,18 @@ body {
 }
 .wrapper {
     margin: auto;
-    width: 80%;
+    width: 79.5%;
 }
 .header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 133px;
 }
 .logo {
     position: relative;
     padding: 40px 0;
     padding-left: 44px;
-    font: bold 24px/31px pt_serif;
+    font: bold 24px/32px pt_serifbold;
 }
 .logo__circle {
     position: absolute;
@@ -43,10 +44,11 @@ body {
 .menu__item {
     position: relative;
     margin-right: 26px;
-    font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+    font: 500 18px/21px robotobold;
     color: #000;
     text-decoration: none;
     transition: opacty .5s;
+    letter-spacing: .3px;
 }
 .menu__item:after {
     position: absolute;
@@ -69,30 +71,41 @@ body {
 .menu__item:last-child {
     margin-right: 0;
 }
-.main-section {
-    display: flex;
-    justify-content: space-between;
+.main {
+    padding: 72px 65% 100px 0;
+    background: top right no-repeat url(img/mainimg.svg);
 }
-.main-content {
-    width: 36%;
+.main__title {
+    margin: 0 0 35px 0;
+    font: 66px/87px pt_serifbold;
 }
-.main-content__title {
-    font-size: 50px;
-    font-family: pt_serif;
+.main__title_bg {
+    background: #ECF3FF;
+    font: 66px/87px pt_serifbold;
 }
-.main-content__paragraph, .main-content__request {
-    font-family: Roboto;
+/*.main__title::before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    top: 286px;
+    width: 350px;
+    height: 115px;
+    background: #ECF3FF;
+}*/
+.main__paragraph {
+    margin: 0 0 44px 0;
+    font: 22px/25px roboto;
 }
-.main-content__paragraph {
-    font-size: 18px;
-    margin-bottom: 41px;
+.main__request {
+    display: inline-block;
+    font: 500 18px/21px roboto;
+    color: #fff;
+    background: #0056EC;
+    padding: 18px 21px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: opacity .5s;
 }
-.main-content__request {
-    font-size: 14px;
-    width: 209px;
-    height: 44px;
-}
-.image-content {
-    padding-right: 514px;
-    border: dashed 1px red;
+.main__request:hover {
+    opacity: .5;
 }
