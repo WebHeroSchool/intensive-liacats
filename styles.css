@@ -11,7 +11,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 133px;
+    margin-bottom: 132px;
 }
 .logo {
     position: relative;
@@ -40,11 +40,11 @@ body {
 .menu {
     display: flex;
     align-items: center;
-    margin: 0 -15px 0 0;
+    margin: 0 3px 0 0;
 }
 .menu__item {
     position: relative;
-    margin-right: 26px;
+    margin-right: 25px;
     font: 500 18px/21px robotobold;
     color: #000;
     text-decoration: none;
@@ -134,7 +134,7 @@ body {
 .burger-menu__item {
 	position: relative;
 	display: block;
-	margin-bottom: 23px;
+	margin-bottom: 25px;
 	text-align: center;
     font: 30px/35px robotobold;
 	color: #000;
@@ -148,7 +148,7 @@ body {
 
 .main {
     padding: 72px 65% 200px 0;
-    background: 103% 0% no-repeat url(img/mainimg.svg);
+    background: top right no-repeat url(img/mainimg.svg);
 }
 .main__title {
     margin: 0 0 35px 0;
@@ -159,7 +159,7 @@ body {
     font: 66px/87px pt_serifbold;
 }
 .main__paragraph {
-    margin: 0 10% 44px 0;
+    margin: 0 11% 44px 0;
     font: 22px/25px roboto;
 }
 .main__request {
@@ -174,6 +174,16 @@ body {
 }
 .main__request:hover {
     opacity: .5;
+}
+
+@media (max-width: 1440px) {
+    .header {
+        margin-bottom: 80px;
+    }
+    .main {
+        padding: 16px 55% 100px 0;
+        background-size: 50%;
+    }
 }
 
 @media (max-width: 1366px) {
@@ -203,6 +213,7 @@ body {
     }
     .main__paragraph {
         font: 18px/21px roboto;
+        letter-spacing: .1px;
     }
     .main__request {
         font: 500 14px/16px roboto;
@@ -224,6 +235,9 @@ body {
     .header {
         margin-bottom: 28px;
     }
+    .logo {
+        padding: 20px 44px;
+    }
     .menu {
         display: none;
     }
@@ -244,7 +258,7 @@ body {
         font: 30px/39px pt_serifbold;
     }
     .main__paragraph {
-        margin-bottom: 25px;
+        margin: 0 44px 25px;
         font: 500 16px/19px roboto;
     }
     .main__request {
@@ -257,6 +271,10 @@ body {
     }
     .header {
         margin-bottom: 7px;
+    }
+    .logo {
+        padding: 40px 0;
+        padding-left: 44px;
     }
     .logo__text {
         display: none;
