@@ -162,6 +162,7 @@ body {
     margin: 0 11% 44px 0;
     font: 22px/25px roboto;
 }
+
 .main__request {
     display: inline-block;
     font: 500 18px/21px roboto;
@@ -171,9 +172,26 @@ body {
     text-decoration: none;
     border-radius: 4px;
     transition: opacity .5s;
+    animation: slider 5s;
 }
 .main__request:hover {
     opacity: .5;
+
+}
+
+@keyframes slider {
+	0%{
+		transform: translateX(0%);
+        opacity: 25%;
+	}
+    50% {
+        transform: translateX(50%);
+        opacity: 75%;
+    }
+    100%{
+		transform: translateX(0%);
+        opacity: 100%;
+	}
 }
 
 @media (max-width: 1440px) {
@@ -263,8 +281,29 @@ body {
     }
     .main__request {
         font: 500 14px/16px roboto;
+        animation: slider-mobile 5s;
     }
 }
+
+@keyframes slider-mobile {
+	0%{
+		transform: translateX(0%);
+        opacity: 25%;
+	}
+    35% {
+        transform: translateX(-25%);
+        opacity: 50%;
+    }
+    70%{
+        transform: translateX(25%);
+        opacity: 85%;
+    }
+    100%{
+		transform: translateX(0%);
+        opacity: 100%;
+	}
+}
+
 @media (max-width: 375px) {
     .wrapper {
         width: 87%;
